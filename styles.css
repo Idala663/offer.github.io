@@ -1,0 +1,350 @@
+body{
+	background-color: black; 
+}
+.container {
+	width: 1200px;
+	margin: auto;
+	
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px 200px 200px;
+	grid-template-rows: 400px 50px 300px 500px 800px 250px;
+	
+	grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "countdown countdown countdown countdown countdown countdown"
+    "film film film bild bild bild"
+    "biograf biograf biograf biljett biljett biljett"
+    "medier medier prenumerera prenumerera footer footer";
+	
+	font-size: 16px;
+	color: white;
+	font-style: normal;
+	font-family: "open-sans", sans-serif;
+	font-weight: 400;
+}
+
+header {
+	grid-area: header;
+	text-align: center;
+}
+
+/*här är innehållet liknande på alla tre sidor*/
+
+header img {
+	margin-top: 100px;
+	width: 800px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+nav {
+	grid-area: nav;
+	border-top: solid white 1px;
+	border-bottom: solid white 1px;
+	padding: 0px 0px 55px 10px; 
+}
+
+
+nav ul li {
+	letter-spacing: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+
+nav ul li a:hover {
+	color: #387264;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.ett{
+	margin: 0px 287px 0px 50px; 
+}
+
+.tva{
+	margin-right: 297px; 
+}
+/*till hit*/
+
+
+.countdown {
+	grid-area: countdown;
+	border: solid #33424E 3px;
+	border-radius: 20px;
+	margin: 50px;
+}
+
+.countdown p {
+	color: white;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45pt;
+}
+
+.film {
+	 grid-area: film;
+}
+
+.film p {
+	line-height: 1.6rem;
+	font-size: 1.2rem; 
+	margin: 10px 10px 0px 50px;
+}
+
+.film h2 {
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	margin: 0px 0px 0px 50px;
+	color: #387264;
+}
+
+.trailer {
+	width: 200px;
+	margin: 55px 0px 0px 50px;
+	
+}
+
+.bild {
+	grid-area: bild;
+	margin: 0px 70px 0px 10px; 
+}
+
+.biljett {
+	 grid-area: biljett; 
+}
+
+.biljett h3 {
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	margin: 0px 0px 0px 10px;
+	color: #387264; 
+}
+
+.biljett p{
+	margin: 15px 50px 0px 15px;
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+}
+
+.biograf {
+	 grid-area: biograf;
+}
+
+.biograf img {
+	margin-left: 50px;
+}
+
+.onlinebiljett {
+	text-align: center;
+	width: 200px;
+	margin: 55px 0px 0px 15px;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.paymentbox{
+	border: solid white 1px;  
+	margin-left: 15px; 
+	display: none; 
+}
+	
+.paymentbox form{
+	width: 300px; 
+	padding: 20px;
+}
+
+.paymentbox h5{
+	text-align: left; 
+	margin: 10px 0px -10px 10px; 
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.box1{
+	width: 100%; 
+	padding: 5px; 
+	margin: 5px 0px 5px -10px;  
+	border-radius: 5px; 
+	border: none; 
+	box-sizing: border-box;
+	font-style: normal;
+	font-family: "open-sans", sans-serif;
+	font-weight: 400; 
+}
+
+.box2{
+	width: 99%; 
+	padding: 5px; 
+	margin: 5px 0px 5px -10px;  
+	border-radius: 5px; 
+	border: none; 
+	box-sizing: border-box; 
+	font-style: normal;
+	font-family: "open-sans", sans-serif;
+	font-weight: 400;
+}
+
+.btn{
+	width: 100%; 
+	border-radius: 5px; 
+	border: none; 
+	padding: 5px; 
+	margin: 10px 0px -10px -10px; 
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 1rem;
+	text-align: center; 
+}
+
+.label{
+	font-size: 0.8rem;
+	margin: 10px 0px -10px -10px; 
+}
+
+.div{
+	display: inline-block; 
+}
+
+.box{
+	display: flex; 
+}
+
+/*innehållet mot slutet är liknande på alla sidor*/
+
+.medier{
+    grid-area: medier;
+	padding-left: 50px;
+    padding-top: 20px;
+}
+
+.medier img {
+    width: 80px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.list{
+    grid-area: medier;
+    align-self: end;
+	padding-left: 10px;
+}
+
+.list ul li {
+    list-style-type: none
+}
+
+.subscribe{
+    grid-area: prenumerera;
+	align-self: center;
+}
+
+.box3{
+	width: 100%;  
+	padding: 15px; 
+	border: solid white 1px; 
+	border-radius: 15px; 
+	box-sizing: border-box; 
+	font-style: normal;
+	font-family: "open-sans", sans-serif;
+	font-weight: 400;
+}
+
+.pren{
+	width: 100%; 
+	border-radius: 15px; 
+	border: solid white 1px; 
+	padding: 8px; 
+	margin-top: 5px; 
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.logo {
+    grid-area: footer;
+    text-align: right;
+	padding: 20px 20px 0px 0px; 
+}
+
+.logo img {
+    width: 120px;
+}
+
+
+footer {
+    grid-area: footer;
+    align-self: end;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 0.8rem;
+}
+
+.horisontal-line { /* horisontell linjen */
+    grid-area: biograf / biograf / biljett /biljett;
+    border-bottom: 2px solid white; 
+	z-index: -1;
+}
+
+.tacksida{
+	text-align: center;
+}
+
+.tack{
+	font-size: 3rem; 
+	color: white; 
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	
+}
+
+.startsida a{ 
+	color: white; 
+	text-decoration: none; 
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.startsida a:hover{ 
+	color: #387264;
+}

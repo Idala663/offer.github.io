@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uwv3pnb.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="skript.js"></script>
+	<script src="countdown.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header><a href="index.html"><img src="offer.png" alt="offer"></a></header>
+		
+		<video autoplay muted loop id="myVideo">
+  		<source src="film.mov" type="video/mp4">
+ 		</video>
+		
+		<nav>
+			<ul class="lista">
+				<li class="ett"><a href="index.html">Startsida</a></li>
+				<li class="tva"><a href="program.html">Programsida</a></li>
+				<li ><a href="bildgalleri.html">Bildgalleri</a></li>
+			</ul>
+		</nav>
+		<div class="countdown">
+			<p id="demo"></p>
+		</div>
+		<div class="film">
+			<h2>Handling.</h2>
+			<p>Studenterna Hedda och Anna går hem sent på natten efter en fest.
+				Plötsligt blir Anna skjuten. Hedda ger sig ut på egen hand för att
+				söka svar på varför det skedde. Var det bara en slump, eller finns
+				det en djupare mening bakom? I sin jakt på svar blir det tydligare
+				att händelsen inte var en tillfällighet. Längs sökandet finner hon ledtrådar
+				som för henne över gränserna mellan verklighet och myt. Ju mer som avslöjas
+				desto mer komplex och farlig blir hennes värld. Hon ställer sig frågan:
+				<em>vem är offer och kommer sanningen någonsin att avslöjas?</em>
+			</p>
+			<a href="#"><img class="trailer" src="trailer.svg" alt="trailer"></a>
+		</div>
+		
+		<div class="bild"><img src="tjej.png" alt="tjej"></div>
+		<div class="biograf"><img src="biograf.png" alt="cinema"></div>
+
+		<div class="biljett">
+			<h3>Biljettinformation.</h3>
+				<p>Vi är glada att meddela att vi kommer att ha en särskild försäljning av fysiska biljetter
+					till premiären av filmen <em>Offer</em>. Den 15 april kommer vi att
+					finnas på Parkgatan 16 i Norrköping där du kan köpa din biljett !</p>
+
+				<p>Genom att säkra din biljett vid den fysiska försäljningen kommer du att få en exklusiv förmån vid
+					premiären.
+					Du kommer att ha tillgång till en separat kö, vilket innebär att du slipper köa lika
+					länge som de med online biljett.</p>
+
+				<p>Missa inte chansen att vara en del av denna unika upplevelse!
+					Se till att säkra din biljett den 1 mars och ta del av den exklusiva
+					förmånen på premiären av <em>Offer</em> !</p>
+				<img class="onlinebiljett" src="onlinebiljet.svg" alt="onlinebiljett">
+			
+			<div class="paymentbox">
+		<h5>Betalning</h5>
+      <form action="tack.html" method="GET">
+				<label class="label" >Kortinnehavarens namn</label>
+				<input class="box1" type="text" name="cardname" placeholder="Förnamn Efternamn">
+				<label class="label" >Kortnummer</label>
+				<input class="box1" type="text" name="cardnumber" placeholder="1234-1234-1234-1234">
+					<div class="box">
+		  				<div class="div">
+							<label class="label" >Utgångsår</label>
+							<input class="box2" type="text" name="expyear" placeholder="åååå">
+						</div>
+						<div class="div">
+							<label class="label" >CVC</label>
+							<input class="box2" type="text" name="cvc" placeholder="cvc">
+						</div>
+		  			</div>
+		  <button class="btn" type="submit">Slutför köp</button>
+      </form>
+		</div>
+		</div>
+		<div class="horisontal-line"></div>
+
+
+        <div class="medier">
+             <img src="instagram.svg" alt="Instagram">
+             <img src="facebook.svg" alt="facebook">
+        </div>
+
+      <div class="list">
+            <ul>
+                <li> mail: press@nordcopiapictures.se</li>
+                <li> telefon: +46 73 739 34 86</li>
+            </ul>
+        </div>
+		
+		<div class="subscribe" >
+    <form action="tack.html" method="GET">
+        <input class="box3" type="text" name="mail" placeholder="Skriv din mail här...">
+        <button class="pren" type="submit">Prenumerera</button>
+    </form>
+</div>
+		
+		<div class="horisontal-line"></div>
+
+        <div class="logo">
+            <img src="nordcopia.svg" alt="nordcopiapictures">
+            <img src="gnema.svg" alt="GNEMA i Norrköping">
+        </div>
+
+        <footer>
+            <p> &copy; 2024 Nordcopia Pictures. All rights reserved</p>
+        </footer>
+	</div>
+</body>
+
+</html>
